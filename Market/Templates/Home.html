@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %}
+    Welcome To UpTech
+{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 25px;}
+  .margin {margin-bottom: 15px;}
+
+  .bg-2 { 
+    background-color:white; /* Dark Blue */
+    color:black;
+  }
+  .container-fluid {
+    padding-top: 90px;
+    padding-bottom: 30px;
+  }
+
+  </style>
+</head>
+<body>
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">UPTECH</h3>
+  <p>Welcome to UpTech, your ultimate destination for cutting-edge gadgets and innovations solutions </p>
+  <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> <a class="btn btn-primary" href="{{url_for('Market_page')}}">Get Started</a>
+  </a>
+</div>
+
+
+</body>
+</html>
+{% endblock %}
